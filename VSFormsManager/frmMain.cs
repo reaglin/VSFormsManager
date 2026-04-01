@@ -230,7 +230,7 @@ namespace VSFormsManager
 
         private void MiNewProject_Click(object? sender, EventArgs e)
         {
-            using var dlg = new frmBatchProject(new Services.FormsRepository());
+            using var dlg = new frmProjectAnalyzer(AppSession.Settings);
             dlg.ShowDialog(this);
         }
 
